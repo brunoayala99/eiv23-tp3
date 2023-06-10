@@ -116,7 +116,6 @@ static void config_modo(Pin const *pin, int bits_modo){
 
 void SP_Pin_setModo(SP_HPin hPin,SP_Pin_Modo modo){
     // Ver Manual de referencia de la familia sec. 9.2.1/.
-    //Defino todas las combinaciones de bits de modo
     enum ConfigsPin{
         /** 
          * Bits[1:0]: Modo E/S, 00 es modo entrada
@@ -139,42 +138,62 @@ void SP_Pin_setModo(SP_HPin hPin,SP_Pin_Modo modo){
          */
         SALIDA_2MHz_OPEN_DRAIN = 0b0110
     };
-    if(hPin >= SP_NUM_PINES) return; // Si el pin esa fuera del limite corto a ejecucion
-    Pin const *pin = pinDeHandle(hPin); //Obtengo pueto y numero
-    __disable_irq(); //Deshabilito interrupciones. Debe hacerse esto al modificar el estado de un pin
-    habilitaRelojPuerto(pin->puerto); //Habilito el reloj del puerto correspondiente
-    if (pin->init_especial) pin->init_especial(); //Desactivo Jtag si es necesario
-    switch (modo)                                 //Me fijo en los bits de modo y ejecuto la funcion config_modo con los parametros correspondientes
+    if(hPin >= SP_NUM_PINES) return; //// debiera generar un error.
+                                       //si el valor de hPin es mayor o igual que SP_HPIN_LIMITE, entonces se
+                                       //retorna de la funcion sin hacer nada. En otras palabras si hPin no esta
+                                       //dentro del rango valido de identificadores de hadware de los pines, la 
+                                       //funcion no hace nada.
+    
+    Pin const *self = pinDeHandle(hPin); // se declara un puntero constante "self" a la estructura "Pin"
+                                          // que corresponde al pin identificado por hPin. la funcion
+                                          // pinDeHandle se encarga de devolver el puntero a dicha estructura.
+
+    __disable_irq(); // deshabilita las interrupciones durante la ejecucion de la funcion
+                    // esto evita que las interrupciones afecten la config. del pin.
+    
+    habilitaRelojPuerto(self->puerto); // la funcion habilitaRelojPuerto habilita el reloj del puerto al que esta
+                                       // conectado el pin.
+
+    if (self->init_especial) self->init_especial(); //Desactivo Jtag si es necesario
+    switch (modo)
     {
     case SP_PIN_ENTRADA:
-        config_modo(pin,ENTRADA_FLOTANTE);
+        config_modo(self,ENTRADA_FLOTANTE);
     break;case SP_PIN_ENTRADA_PULLUP:
-        config_modo(pin,ENTRADA_PULLUP_PULLDN);
+        config_modo(self,ENTRADA_PULLUP_PULLDN);
         SP_Pin_write(hPin,1);
     break;case SP_PIN_ENTRADA_PULLDN:
-        config_modo(pin,ENTRADA_PULLUP_PULLDN);
+        config_modo(self,ENTRADA_PULLUP_PULLDN);
         SP_Pin_write(hPin,0);
     break;case SP_PIN_SALIDA:
-        config_modo(pin,SALIDA_2MHz);
+        config_modo(self,SALIDA_2MHz);
     break;case SP_PIN_SALIDA_OPEN_DRAIN:
-        config_modo(pin,SALIDA_2MHz_OPEN_DRAIN);
+        config_modo(self,SALIDA_2MHz_OPEN_DRAIN);
     break;default:
     // Debiera generar un error
     break;
     }
-    __enable_irq(); //Una vez finalizo este proceso, vuelvo a habilitar las interrupciones
+    __enable_irq();
 }
-
+/*
+SP_Pin_read recibe un parametro hPin que debe ser un puntero
+a una estructura de datos que representa un pin de hadware. esta
+funcion debe leer el valor actual del pin y devolverlo como boleano
+*/
 bool SP_Pin_read(SP_HPin hPin){
-    Pin const *const pin = pinDeHandle(hPin); //Obtengo puerto y numero del pin que quiero leer, y los guardo en la variable "pin"
-    return pin->puerto->IDR & (1 << pin->nrPin); //Accedo al registro IDR (buffer de entrada) del pin, y leo el nrPin-ésimo bit
+    Pin const *const pin = pinDeHandle(hPin); 
+    return pin->puerto->IDR & (1 << pin->nrPin); //Accedo al registro IDR  del pin, y leo el nrPin-ésimo bit
 }
 
+/*
+// SP_Pin_write recibe un parametro hPin que representa el pin de 
+hadware que se desea escribir y un parametro "valor" que es un
+boleano que representa el valor que se debe escribir en el pin.
+esta funcion debe escribir el valor "valor" en el pin especificado
+por hPin.
+*/
 void SP_Pin_write(SP_HPin hPin, bool valor){
-    enum {PIN_SET = 0,PIN_RESET = 16}; //Defino el offset que debo desplazarme para acceder a la parte alta o baja de BSRR
-    Pin const *const pin = pinDeHandle(hPin); //Obtengo puerto y numero del pin que deseo escribir, y los guardo en "pin" 
-    pin->puerto->BSRR = 1 << (pin->nrPin + ((valor)? PIN_SET:PIN_RESET)); //Accedo al registro BSRR (Set-Reset)
+    enum {PIN_SET = 0,PIN_RESET = 16}; 
+    Pin const *const pin = pinDeHandle(hPin);  
+    pin->puerto->BSRR = 1 << (pin->nrPin + ((valor)? PIN_SET:PIN_RESET)); 
 }
-//Dentro de BSRR escribo un 1 en el lugar correspondiente al numero de pin
-//Desplazado con un offset de 0 si quiero setear (escribir un 1), o 16 si quiero resetear (escribir un cero)
-//Al offset lo decidira la variable "valor". Si es 1 elige set, si es 0 elije reset
