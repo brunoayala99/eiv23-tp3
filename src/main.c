@@ -6,7 +6,7 @@
 #include <stddef.h>
 
 
-#define PIN_LUZ SP_PIN_LED
+#define PIN_LUZ SP_LED
 #define PIN_PULSADOR SP_PB9
 
 #define HISTERESIS_ANTIRREBOTE 5

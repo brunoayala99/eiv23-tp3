@@ -4,7 +4,7 @@
 #include <soporte_placa.h>
 #include <maquina_estado.h>
 #include "despacho_retardado.h"
-#include "eventos_aplicacion.h"
+#include "evento_aplicacion.h"
 #include "controlador_de_pulsaciones.h"
 
 

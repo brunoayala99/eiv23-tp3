@@ -115,17 +115,17 @@ static Opt_IRQn_Type SP_PinExti_getIrq(SP_PinExti const * pin){
     break;case SP_EXTI_4:
         OPT_SET_VALUE(irq,EXTI4_IRQn);
     break;      case SP_EXTI_5:
-    /fallthru/case SP_EXTI_6:
-    /fallthru/case SP_EXTI_7:
-    /fallthru/case SP_EXTI_8:
-    /fallthru/case SP_EXTI_9:
+    /*fallthru*/case SP_EXTI_6:
+    /*fallthru*/case SP_EXTI_7:
+    /*fallthru*/case SP_EXTI_8:
+    /*fallthru*/case SP_EXTI_9:
         OPT_SET_VALUE(irq,EXTI9_5_IRQn);
     break;      case SP_EXTI_10:
-    /fallthru/case SP_EXTI_11:
-    /fallthru/case SP_EXTI_12:
-    /fallthru/case SP_EXTI_13:
-    /fallthru/case SP_EXTI_14:
-    /fallthru/case SP_EXTI_15:
+    /*fallthru*/case SP_EXTI_11:
+    /*fallthru*/case SP_EXTI_12:
+    /*fallthru*/case SP_EXTI_13:
+    /*fallthru*/case SP_EXTI_14:
+    /*fallthru*/case SP_EXTI_15:
         OPT_SET_VALUE(irq,EXTI15_10_IRQn);
     break;default:
     break;

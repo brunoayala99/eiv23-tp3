@@ -1,20 +1,16 @@
 #ifndef I_ACCION_H
 #define I_ACCION_H
 
-typedef struct IAccion IAccion;  //Variable tipo IAccion
+typedef struct IAccion IAccion;
 
-typedef void IAccion_Ejecutar(IAccion *self); 
-
-typedef struct IAccion_VT{
-    IAccion_Ejecutar *ejecutar;
-}IAccion_VT;
+typedef void (*IAccion_Ejecutar)(IAccion *self);
 
 struct IAccion{
-    IAccion_VT const * _vptr;
+    IAccion_Ejecutar ejecutar;
 };
 
 __attribute__((always_inline))
 static inline void IAccion_ejecuta(IAccion *self){
-    if(self->_vptr) self->_vptr->ejecutar(self);
+    if(self->ejecutar) self->ejecutar(self);
 }
 #endif

@@ -4,20 +4,20 @@
 #include <stdbool.h>
 
 #ifndef MAX_EV_COLA
-#define MAX_EV_COLA 16 /*Debe ser potencia de 2 para optimizar tiempo de cálculo*/
+#define MAX_EV_COLA 16 /* debe ser potencia de 2*/
 #endif
 
-#if MAX_EV_COLA & (MAX_EV_COLA - 1) //La sentencia es verdadera si MAXIMOS_EVENTOS_EN_COLA NO es potencia de 2
-#error MAX_EV_COLA debe ser potencia de dos 
+#if MAX_EV_COLA & (MAX_EV_COLA - 1)
+#error MAX_EV_COLA debe ser potencia de dos
 #endif
 
-typedef struct Maquina Maquina;                                     //"Maquina" es una variable tipo "struct Maquina"
-typedef unsigned Evento;                                            //Evento es un numero
-typedef struct Resultado Resultado;                                 //"Resultado" es una variable tipo "struct Resultado"
-typedef Resultado (*Estado)(Maquina* contexto, Evento evento);      //Estado es un puntero a funcion, que recibe puntero a maquina y un evento, y devuelve un resultado 
+typedef struct Maquina Maquina;
+typedef unsigned Evento;
+typedef struct Resultado Resultado;
+typedef Resultado (*Estado)(Maquina* contexto, Evento evento);
 
 
-enum EventoSistema{                                                 //Enumero los tipos de eventos posibles
+enum EventoSistema{
     /**
      * @brief Significa que no hay eventos disponibles
      */
@@ -39,45 +39,40 @@ enum EventoSistema{                                                 //Enumero lo
 /**
  * @brief Máquina de estado
  */
-struct Maquina{                                             //Contiene: Cola (Espacios totales, leidos y escritos), Estado inicial, Estado final
+struct Maquina{
     struct {
+        Evento eventos[MAX_EV_COLA];
         /**
-         * @brief Cola de eventos con 16 espacios libres
-         */
-        Evento eventos[MAX_EV_COLA];                               
-        /**
-         * @brief Cantidad de elementos tomados de la cola (0 < lecturas < escrituras).
-         * Lecturas % MAX_EV_COLA : indice del proximo elemento a leer
+         * @brief lecturas % MAX_EV_COLA : indice del proximo elemento a leer
          * SI lecturas != escrituras
          */
         unsigned lecturas;
         /**
-         * @brief Cantidad de elementos ingresados por la maquina en la cola (lecturas < escrituras < 16)
-         * Escrituras % MAX_EV_COLA : indice del proximo espacio libre 
+         * @brief escrituras % MAX_EV_COLA : indice del proximo espacio libre 
          * SI (escrituras - lecturas) < MAX_EV_COLA
          */
         unsigned escrituras;
     }cola;
-    Estado estadoInicial;                       //Variable tipo estado que representa el estado inicial de la maquina
-    Estado estadoActual;                        //Variable tipo estado que representa el estado actual
+    Estado estadoInicial;
+    Estado estadoActual;
 };
 
 
 /**
- * @brief Despacha (Atiende) un evento para posterior procesamiento. (Pone el evento en la cola FIFO)
+ * @brief Despacha un evento para posterior procesamiento
  * 
- * @param self Puntero a la maquina
- * @param evento Evento a despachar en la cola.
+ * @param self Este objeto
+ * @param evento Evento a despachar
  * @return true Evento despachado
  * @return false Falla al despachar evento
  */
 bool Maquina_despacha(Maquina *self, Evento evento);
 
 /**
- * @brief Procesa un evento disponible en la cola. Este método debe ser llamado
+ * @brief Procesa un evento disponible. Este método debe ser llamado
  * desde un solo punto del programa.
  * 
- * @param self Puntero a la maquina
+ * @param self Este objeto
  * @return true Evento procesado
  * @return false No había eventos disponibles
  */

@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 #include <maquina_estado.h>
-#include "eventos_aplicacion.h"
+#include "evento_aplicacion.h"
 #include "controlador_luz.h"
 #include "despacho_retardado.h"
 
