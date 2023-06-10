@@ -1,42 +1,69 @@
-#include <soporte_placa.h>   // archivo de cabecera
+#include <soporte_placa.h>
+#include "controlador_luz.h"
+#include "controlador_de_pulsaciones.h"
+#include "pulsador.h"
+#include "despacho_retardado.h"
+#include <stddef.h>
+
+
+#define PIN_LUZ SP_PIN_LED
+#define PIN_PULSADOR SP_PB9
+
+#define HISTERESIS_ANTIRREBOTE 5
 
 #define LUZ_ON 0
-#define LUZ_OFF 1
-#define PULSADOR_ACTIVO 0
-#define PULSADOR_NORMAL 1
+
+#define PULSADOR_NIVEL_ACTIVO 0
+
+#define TIEMPO_ON 60000
+
+#define TIEMPO_TRIPLE_PULSACION 1000
 
 
-int main(void){                                         // int: indica que la funcion devuelve un valor entero.
-                                                        // void: indica que no recibe argumentos.
+static Maquina * controladorLuz;
+static Maquina * controladorPulsaciones;
+static Pulsador pulsador[1];
+static DespachoRetardado despachoRetardado[1];
 
-    SP_init();
-// esta funcion inicializa los dispositivos de la placa para que esten listos para usar.
+/**
+ * @brief Inicializa el estado del programa para iniciar la ejecución
+ * 
+ */
+static void setup(void);
 
-    SP_Pin_setModo(SP_PB9,SP_PIN_ENTRADA_PULLUP);
-    SP_Pin_setModo(SP_LED,SP_PIN_SALIDA);
-// Estas dos lineas configuran los pines de la placa.
-// La 1era linea configura el pin PB9 como una entrada con resistencia pull-up( es decir, que cuando
-// el boton este sin presionar el pin PB9 esta en un estado alto.
-// La 2da linea configura el LED como una salida.
 
-    SP_Pin_write(SP_LED,LUZ_OFF);
-// Esta linea apaga el LED configurado anteriormente mostrando el pin en un estado en alto (el LED se apaga
-// porque esta a una fuente de voltaje).
-
-    for (;;){    // Bucle infinito.
-        while(SP_Pin_read(SP_PB9) != PULSADOR_ACTIVO);
-// Esta linea se ejecuta mientras PB9 no esta activo.
-// SP_Pin_read(): Lee el estado del pin y devuelve un valor que se compara con PULSADOR_ACTIVO(que es = 0).
-
-        SP_Pin_write(SP_LED,LUZ_ON);
-        SP_delay(60000);
-        SP_Pin_write(SP_LED,LUZ_OFF);
-// Estas lineas encienden el LED.
-// SP_Pin_write(SP_LED,LUZ_ON):El pin en un estado bajo me enciende el LED ya que esta conectado a una fuente
-// de voltaje.
-// SP_delay(60000): Me introduce un retardo de 60 segundos.
-// SP_Pin_write(SP_LED,LUZ_OFF): Apaga el LED con el pin en un estado alto. 
+int main(void){    
+    setup();
+    for (;;){
+        Maquina_procesa(controladorPulsaciones);
+        Maquina_procesa(controladorLuz);
+        DespachoRetardado_procesarDespacho(despachoRetardado);
+        Pulsador_procesa(pulsador);
     }
     return 0;
-// Finaliza la funcion principal. La funcion me devuelve un entero = 0.
+}
+
+
+
+static void setup(void){
+    static ControladorLuz instanciaControlador;
+    static ControladorDePulsaciones instanciaPulsaciones;
+    
+    SP_init();
+    
+    DespachoRetardado_init(despachoRetardado);
+
+    ControladorLuz_init(&instanciaControlador,TIEMPO_ON,PIN_LUZ,LUZ_ON,despachoRetardado);
+    controladorLuz = ControladorLuz_asMaquina(&instanciaControlador);
+    Maquina_procesa(controladorLuz); // Reset inicializa pin con luz apagada
+    
+    ControladorDePulsaciones_init(&instanciaPulsaciones,controladorLuz,despachoRetardado,TIEMPO_TRIPLE_PULSACION);
+    controladorPulsaciones = ControladorDePulsaciones_asMaquina(&instanciaPulsaciones);
+
+    Pulsador_init(pulsador, 
+                  controladorPulsaciones,
+                  EV_BOTON_PULSADO,
+                  PIN_PULSADOR,
+                  PULSADOR_NIVEL_ACTIVO,
+                  HISTERESIS_ANTIRREBOTE);
 }
