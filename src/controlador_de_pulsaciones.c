@@ -16,7 +16,7 @@ Maquina * ControladorDePulsaciones_asMaquina(ControladorDePulsaciones *self) {
 }
 
 static Resultado estadoEspera(Maquina *contexto, Evento evento) {
-    ControladorDePulsaciones self = (ControladorDePulsaciones)contexto;   
+    ControladorDePulsaciones *self = (ControladorDePulsaciones*)contexto;   
     Resultado r = {0};
     switch (evento) {
     case EV_BOTON_PULSADO:
@@ -33,7 +33,7 @@ static Resultado estadoEspera(Maquina *contexto, Evento evento) {
 }
 
 static Resultado estadoCuenta(Maquina *contexto, Evento evento) {
-    ControladorDePulsaciones self = (ControladorDePulsaciones)contexto; 
+    ControladorDePulsaciones *self = (ControladorDePulsaciones*)contexto; 
     Resultado r = {0};
     switch (evento) {
         case EV_BOTON_PULSADO:

@@ -1,31 +1,42 @@
 Archive member included to satisfy reference by file (symbol)
 
-.pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
+.pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+                              .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o (Maquina_despacha)
+.pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(soporte_placa.o)
                               .pio\build\bluepill_f103c8\src\main.o (SP_init)
-c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
-                              c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o (exit)
-c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
-                              c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
-c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
-                              c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o (__libc_init_array)
-c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
-                              c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o (memset)
-c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a(_exit.o)
-                              c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o) (_exit)
+.pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+                              .pio\build\bluepill_f103c8\src\pulsador.o (SP_Pin_read)
+.pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
+                              .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(soporte_placa.o) (SP_Tiempo_init)
+c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
+                              c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o (exit)
+c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
+                              c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+                              c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o (__libc_init_array)
+c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
+                              c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o (memset)
+c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a(_exit.o)
+                              c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+timeoutDescriptors  0x30              .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
 
 Discarded input sections
 
- .text          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crti.o
- .data          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crti.o
- .bss           0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crti.o
- .data          0x00000000        0x4 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
- .text          0x00000000       0x74 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
- .data          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
- .bss           0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
- .ARM.extab     0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
- .ARM.exidx     0x00000000        0x8 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .text          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crti.o
+ .data          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crti.o
+ .bss           0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crti.o
+ .data          0x00000000        0x4 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
+ .text          0x00000000       0x74 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .data          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .bss           0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
  .ARM.attributes
-                0x00000000       0x1b c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+                0x00000000       0x1b c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
  .text          0x00000000       0x14 .pio\build\bluepill_f103c8\FrameworkCMSIS\gcc\startup_stm32f103xb.o
  .data          0x00000000        0x0 .pio\build\bluepill_f103c8\FrameworkCMSIS\gcc\startup_stm32f103xb.o
  .bss           0x00000000        0x0 .pio\build\bluepill_f103c8\FrameworkCMSIS\gcc\startup_stm32f103xb.o
@@ -34,56 +45,77 @@ Discarded input sections
  .bss           0x00000000        0x0 .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
  .rodata.APBPrescTable
                 0x00000000        0x8 .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
+ .text          0x00000000        0x0 .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
+ .data          0x00000000        0x0 .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
+ .bss           0x00000000        0x0 .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
+ .text          0x00000000        0x0 .pio\build\bluepill_f103c8\src\controlador_luz.o
+ .data          0x00000000        0x0 .pio\build\bluepill_f103c8\src\controlador_luz.o
+ .bss           0x00000000        0x0 .pio\build\bluepill_f103c8\src\controlador_luz.o
+ .text          0x00000000        0x0 .pio\build\bluepill_f103c8\src\despacho_retardado.o
+ .data          0x00000000        0x0 .pio\build\bluepill_f103c8\src\despacho_retardado.o
+ .bss           0x00000000        0x0 .pio\build\bluepill_f103c8\src\despacho_retardado.o
  .text          0x00000000        0x0 .pio\build\bluepill_f103c8\src\main.o
  .data          0x00000000        0x0 .pio\build\bluepill_f103c8\src\main.o
  .bss           0x00000000        0x0 .pio\build\bluepill_f103c8\src\main.o
- .text          0x00000000        0x0 .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
- .data          0x00000000        0x0 .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
- .bss           0x00000000        0x0 .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
- .text          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
- .data          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
- .bss           0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
- .text.exit     0x00000000       0x28 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
- .debug_frame   0x00000000       0x28 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 .pio\build\bluepill_f103c8\src\pulsador.o
+ .data          0x00000000        0x0 .pio\build\bluepill_f103c8\src\pulsador.o
+ .bss           0x00000000        0x0 .pio\build\bluepill_f103c8\src\pulsador.o
+ .text          0x00000000        0x0 .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+ .data          0x00000000        0x0 .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+ .bss           0x00000000        0x0 .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+ .text          0x00000000        0x0 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(soporte_placa.o)
+ .data          0x00000000        0x0 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(soporte_placa.o)
+ .bss           0x00000000        0x0 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(soporte_placa.o)
+ .text          0x00000000        0x0 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+ .data          0x00000000        0x0 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+ .bss           0x00000000        0x0 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+ .text          0x00000000        0x0 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
+ .data          0x00000000        0x0 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
+ .bss           0x00000000        0x0 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
+ .text.SP_Tiempo_delay
+                0x00000000       0x38 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
+ .text.SP_Tiempo_addTimeout
+                0x00000000       0x34 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
+ .text          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x28 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x00000000       0x28 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
  .ARM.attributes
-                0x00000000       0x2d c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
- .text          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
- .data          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
- .bss           0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
+                0x00000000       0x2d c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
  .data._impure_ptr
-                0x00000000        0x4 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
+                0x00000000        0x4 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
  .data.impure_data
-                0x00000000       0x60 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
+                0x00000000       0x60 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
  .rodata._global_impure_ptr
-                0x00000000        0x4 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
+                0x00000000        0x4 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000000       0x2d c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
- .text          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
- .data          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
- .bss           0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
- .text          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
- .data          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
- .bss           0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
- .text.memset   0x00000000       0x10 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
- .debug_frame   0x00000000       0x20 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
+                0x00000000       0x2d c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a(_exit.o)
+ .data          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a(_exit.o)
+ .bss           0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a(_exit.o)
+ .text._exit    0x00000000        0x4 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a(_exit.o)
+ .debug_frame   0x00000000       0x20 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a(_exit.o)
  .ARM.attributes
-                0x00000000       0x2d c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
- .text          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a(_exit.o)
- .data          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a(_exit.o)
- .bss           0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a(_exit.o)
- .text._exit    0x00000000        0x4 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a(_exit.o)
- .debug_frame   0x00000000       0x20 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a(_exit.o)
+                0x00000000       0x2d c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a(_exit.o)
+ .text          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtend.o
+ .data          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtend.o
+ .bss           0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtend.o
+ .eh_frame      0x00000000        0x4 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtend.o
  .ARM.attributes
-                0x00000000       0x2d c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a(_exit.o)
- .text          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtend.o
- .data          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtend.o
- .bss           0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtend.o
- .eh_frame      0x00000000        0x4 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtend.o
- .ARM.attributes
-                0x00000000       0x2d c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtend.o
- .text          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtn.o
- .data          0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtn.o
- .bss           0x00000000        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtn.o
+                0x00000000       0x2d c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtend.o
+ .text          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtn.o
+ .data          0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtn.o
+ .bss           0x00000000        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtn.o
 
 Memory Configuration
 
@@ -94,35 +126,40 @@ FLASH            0x08000000         0x00010000         xr
 
 Linker script and memory map
 
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crti.o
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crti.o
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
 LOAD .pio\build\bluepill_f103c8\FrameworkCMSIS\gcc\startup_stm32f103xb.o
 LOAD .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
+LOAD .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
+LOAD .pio\build\bluepill_f103c8\src\controlador_luz.o
+LOAD .pio\build\bluepill_f103c8\src\despacho_retardado.o
 LOAD .pio\build\bluepill_f103c8\src\main.o
+LOAD .pio\build\bluepill_f103c8\src\pulsador.o
 START GROUP
-LOAD .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m\libgcc.a
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libm.a
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libstdc++_nano.a
+LOAD .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a
+LOAD .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m\libgcc.a
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libm.a
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libstdc++_nano.a
 END GROUP
 START GROUP
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m\libgcc.a
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m\libgcc.a
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a
 END GROUP
 START GROUP
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m\libgcc.a
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m\libgcc.a
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a
 END GROUP
 START GROUP
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m\libgcc.a
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m\libgcc.a
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a
 END GROUP
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtend.o
-LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtn.o
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtend.o
+LOAD c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtn.o
                 0x20005000                _estack = (ORIGIN (RAM) + LENGTH (RAM))
                 0x00000200                _Min_Heap_Size = 0x200
                 0x00000400                _Min_Stack_Size = 0x400
@@ -134,10 +171,10 @@ LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/g
                 0x08000000                g_pfnVectors
                 0x0800010c                . = ALIGN (0x4)
 
-.text           0x0800010c      0x32c
+.text           0x0800010c      0x73c
                 0x0800010c                . = ALIGN (0x4)
  *(.text)
- .text          0x0800010c       0x40 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
+ .text          0x0800010c       0x40 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
  *(.text*)
  .text.Reset_Handler
                 0x0800014c       0x48 .pio\build\bluepill_f103c8\FrameworkCMSIS\gcc\startup_stm32f103xb.o
@@ -203,110 +240,163 @@ LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/g
  .text.SystemCoreClockUpdate
                 0x080001e4       0x58 .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
                 0x080001e4                SystemCoreClockUpdate
+ .text.estadoCuenta
+                0x0800023c       0x3c .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
+ .text.estadoEspera
+                0x08000278       0x38 .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
+ .text.ControladorDePulsaciones_init
+                0x080002b0       0x1c .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
+                0x080002b0                ControladorDePulsaciones_init
+ .text.ControladorDePulsaciones_asMaquina
+                0x080002cc        0x2 .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
+                0x080002cc                ControladorDePulsaciones_asMaquina
+ *fill*         0x080002ce        0x2 
+ .text.estadoApagado
+                0x080002d0       0x5c .pio\build\bluepill_f103c8\src\controlador_luz.o
+ .text.estadoMudanza
+                0x0800032c       0x30 .pio\build\bluepill_f103c8\src\controlador_luz.o
+ .text.estadoEncendido
+                0x0800035c       0x3c .pio\build\bluepill_f103c8\src\controlador_luz.o
+ .text.ControladorLuz_init
+                0x08000398       0x24 .pio\build\bluepill_f103c8\src\controlador_luz.o
+                0x08000398                ControladorLuz_init
+ .text.ControladorLuz_asMaquina
+                0x080003bc        0x2 .pio\build\bluepill_f103c8\src\controlador_luz.o
+                0x080003bc                ControladorLuz_asMaquina
+ .text.DespachoRetardado_init
+                0x080003be        0xc .pio\build\bluepill_f103c8\src\despacho_retardado.o
+                0x080003be                DespachoRetardado_init
+ .text.DespachoRetardado_programarDespacho
+                0x080003ca       0x4e .pio\build\bluepill_f103c8\src\despacho_retardado.o
+                0x080003ca                DespachoRetardado_programarDespacho
+ .text.DespachoRetardado_procesarDespacho
+                0x08000418       0x6c .pio\build\bluepill_f103c8\src\despacho_retardado.o
+                0x08000418                DespachoRetardado_procesarDespacho
  .text.startup.main
-                0x0800023c       0x3a .pio\build\bluepill_f103c8\src\main.o
-                0x0800023c                main
+                0x08000484       0x8c .pio\build\bluepill_f103c8\src\main.o
+                0x08000484                main
+ .text.Pulsador_init
+                0x08000510       0x3c .pio\build\bluepill_f103c8\src\pulsador.o
+                0x08000510                Pulsador_init
+ .text.Pulsador_procesa
+                0x0800054c       0x5a .pio\build\bluepill_f103c8\src\pulsador.o
+                0x0800054c                Pulsador_procesa
+ .text.Maquina_despacha
+                0x080005a6       0x28 .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+                0x080005a6                Maquina_despacha
+ .text.Maquina_init
+                0x080005ce       0x10 .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+                0x080005ce                Maquina_init
+ .text.Maquina_procesa
+                0x080005de       0x46 .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+                0x080005de                Maquina_procesa
+ .text.SP_init  0x08000624        0x4 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(soporte_placa.o)
+                0x08000624                SP_init
+ .text.desactivarJtag
+                0x08000628       0x2c .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
  .text.config_modo
-                0x08000276       0x34 .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
- *fill*         0x080002aa        0x2 
- .text.SP_init  0x080002ac       0x3c .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
-                0x080002ac                SP_init
- .text.SP_delay
-                0x080002e8       0x18 .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
-                0x080002e8                SP_delay
- .text.SysTick_Handler
-                0x08000300       0x10 .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
-                0x08000300                SysTick_Handler
- .text.SP_Pin_setModo
-                0x08000310       0x7c .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
-                0x08000310                SP_Pin_setModo
+                0x08000654       0x38 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
  .text.SP_Pin_read
-                0x0800038c       0x28 .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
-                0x0800038c                SP_Pin_read
+                0x0800068c       0x20 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+                0x0800068c                SP_Pin_read
  .text.SP_Pin_write
-                0x080003b4       0x24 .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
-                0x080003b4                SP_Pin_write
+                0x080006ac       0x24 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+                0x080006ac                SP_Pin_write
+ .text.SP_Pin_setModo
+                0x080006d0       0x74 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+                0x080006d0                SP_Pin_setModo
+ .text.SP_Tiempo_init
+                0x08000744       0x4c .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
+                0x08000744                SP_Tiempo_init
+ .text.SysTick_Handler
+                0x08000790       0x3c .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
+                0x08000790                SysTick_Handler
+ .text.SP_Tiempo_getMilisegundos
+                0x080007cc        0xc .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
+                0x080007cc                SP_Tiempo_getMilisegundos
  .text.__libc_init_array
-                0x080003d8       0x48 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
-                0x080003d8                __libc_init_array
+                0x080007d8       0x48 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+                0x080007d8                __libc_init_array
+ .text.memset   0x08000820       0x10 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
+                0x08000820                memset
  *(.glue_7)
- .glue_7        0x08000420        0x0 linker stubs
+ .glue_7        0x08000830        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08000420        0x0 linker stubs
+ .glue_7t       0x08000830        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08000420        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
+ .eh_frame      0x08000830        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
  *(.init)
- .init          0x08000420        0x4 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crti.o
-                0x08000420                _init
- .init          0x08000424        0x8 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtn.o
+ .init          0x08000830        0x4 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crti.o
+                0x08000830                _init
+ .init          0x08000834        0x8 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtn.o
  *(.fini)
- .fini          0x0800042c        0x4 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crti.o
-                0x0800042c                _fini
- .fini          0x08000430        0x8 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtn.o
-                0x08000438                . = ALIGN (0x4)
-                0x08000438                _etext = .
+ .fini          0x0800083c        0x4 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crti.o
+                0x0800083c                _fini
+ .fini          0x08000840        0x8 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtn.o
+                0x08000848                . = ALIGN (0x4)
+                0x08000848                _etext = .
 
-.vfp11_veneer   0x08000438        0x0
- .vfp11_veneer  0x08000438        0x0 linker stubs
+.vfp11_veneer   0x08000848        0x0
+ .vfp11_veneer  0x08000848        0x0 linker stubs
 
-.v4_bx          0x08000438        0x0
- .v4_bx         0x08000438        0x0 linker stubs
+.v4_bx          0x08000848        0x0
+ .v4_bx         0x08000848        0x0 linker stubs
 
-.iplt           0x08000438        0x0
- .iplt          0x08000438        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
+.iplt           0x08000848        0x0
+ .iplt          0x08000848        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
 
-.rodata         0x08000438       0x20
-                0x08000438                . = ALIGN (0x4)
+.rodata         0x08000848      0x190
+                0x08000848                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.AHBPrescTable
-                0x08000438       0x10 .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
-                0x08000438                AHBPrescTable
- .rodata.pines  0x08000448       0x10 .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
-                0x08000458                . = ALIGN (0x4)
+                0x08000848       0x10 .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
+                0x08000848                AHBPrescTable
+ .rodata.pines  0x08000858      0x180 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+                0x080009d8                . = ALIGN (0x4)
 
-.rel.dyn        0x08000458        0x0
- .rel.iplt      0x08000458        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
+.rel.dyn        0x080009d8        0x0
+ .rel.iplt      0x080009d8        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
 
-.ARM.extab      0x08000458        0x0
-                0x08000458                . = ALIGN (0x4)
+.ARM.extab      0x080009d8        0x0
+                0x080009d8                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08000458                . = ALIGN (0x4)
+                0x080009d8                . = ALIGN (0x4)
 
-.ARM            0x08000458        0x0
-                0x08000458                . = ALIGN (0x4)
-                0x08000458                __exidx_start = .
+.ARM            0x080009d8        0x0
+                0x080009d8                . = ALIGN (0x4)
+                0x080009d8                __exidx_start = .
  *(.ARM.exidx*)
-                0x08000458                __exidx_end = .
-                0x08000458                . = ALIGN (0x4)
+                0x080009d8                __exidx_end = .
+                0x080009d8                . = ALIGN (0x4)
 
-.preinit_array  0x08000458        0x0
-                0x08000458                . = ALIGN (0x4)
-                0x08000458                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x080009d8        0x0
+                0x080009d8                . = ALIGN (0x4)
+                0x080009d8                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x08000458                PROVIDE (__preinit_array_end, .)
-                0x08000458                . = ALIGN (0x4)
+                0x080009d8                PROVIDE (__preinit_array_end, .)
+                0x080009d8                . = ALIGN (0x4)
 
-.init_array     0x08000458        0x4
-                0x08000458                . = ALIGN (0x4)
-                0x08000458                PROVIDE (__init_array_start, .)
+.init_array     0x080009d8        0x4
+                0x080009d8                . = ALIGN (0x4)
+                0x080009d8                PROVIDE (__init_array_start, .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08000458        0x4 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
-                0x0800045c                PROVIDE (__init_array_end, .)
-                0x0800045c                . = ALIGN (0x4)
+ .init_array    0x080009d8        0x4 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
+                0x080009dc                PROVIDE (__init_array_end, .)
+                0x080009dc                . = ALIGN (0x4)
 
-.fini_array     0x0800045c        0x4
-                0x0800045c                . = ALIGN (0x4)
+.fini_array     0x080009dc        0x4
+                0x080009dc                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0800045c        0x4 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
+ .fini_array    0x080009dc        0x4 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end, .)
-                0x08000460                . = ALIGN (0x4)
-                0x08000460                _sidata = LOADADDR (.data)
+                0x080009e0                . = ALIGN (0x4)
+                0x080009e0                _sidata = LOADADDR (.data)
 
-.data           0x20000000        0x4 load address 0x08000460
+.data           0x20000000        0x4 load address 0x080009e0
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -319,33 +409,48 @@ LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/g
                 0x20000004                . = ALIGN (0x4)
                 0x20000004                _edata = .
 
-.igot.plt       0x20000004        0x0 load address 0x08000464
- .igot.plt      0x20000004        0x0 c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
+.igot.plt       0x20000004        0x0 load address 0x080009e4
+ .igot.plt      0x20000004        0x0 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
                 0x20000004                . = ALIGN (0x4)
 
-.bss            0x20000004       0x20 load address 0x08000464
+.bss            0x20000004      0x170 load address 0x080009e4
                 0x20000004                _sbss = .
                 0x20000004                __bss_start__ = _sbss
  *(.bss)
- .bss           0x20000004       0x1c c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
+ .bss           0x20000004       0x1c c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
  *(.bss*)
- .bss.ticks     0x20000020        0x4 .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
+ .bss.controladorLuz
+                0x20000020        0x4 .pio\build\bluepill_f103c8\src\main.o
+ .bss.controladorPulsaciones
+                0x20000024        0x4 .pio\build\bluepill_f103c8\src\main.o
+ .bss.despachoRetardado
+                0x20000028       0x38 .pio\build\bluepill_f103c8\src\main.o
+ .bss.instanciaControlador.4348
+                0x20000060       0x60 .pio\build\bluepill_f103c8\src\main.o
+ .bss.instanciaPulsaciones.4349
+                0x200000c0       0x60 .pio\build\bluepill_f103c8\src\main.o
+ .bss.pulsador  0x20000120       0x1c .pio\build\bluepill_f103c8\src\main.o
+ .bss.limiteRedondeo
+                0x2000013c        0x4 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
+ .bss.ticks     0x20000140        0x4 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
  *(COMMON)
-                0x20000024                . = ALIGN (0x4)
-                0x20000024                _ebss = .
-                0x20000024                __bss_end__ = _ebss
+ COMMON         0x20000144       0x30 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
+                0x20000144                timeoutDescriptors
+                0x20000174                . = ALIGN (0x4)
+                0x20000174                _ebss = .
+                0x20000174                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000024      0x604 load address 0x08000464
-                0x20000028                . = ALIGN (0x8)
- *fill*         0x20000024        0x4 
+                0x20000174      0x604 load address 0x080009e4
+                0x20000178                . = ALIGN (0x8)
+ *fill*         0x20000174        0x4 
                 [!provide]                PROVIDE (end, .)
                 [!provide]                PROVIDE (_end, .)
-                0x20000228                . = (. + _Min_Heap_Size)
- *fill*         0x20000028      0x200 
-                0x20000628                . = (. + _Min_Stack_Size)
- *fill*         0x20000228      0x400 
-                0x20000628                . = ALIGN (0x8)
+                0x20000378                . = (. + _Min_Heap_Size)
+ *fill*         0x20000178      0x200 
+                0x20000778                . = (. + _Min_Stack_Size)
+ *fill*         0x20000378      0x400 
+                0x20000778                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -356,71 +461,164 @@ LOAD c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/g
                 0x00000000       0x29
  *(.ARM.attributes)
  .ARM.attributes
-                0x00000000       0x1d c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crti.o
+                0x00000000       0x1d c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crti.o
  .ARM.attributes
-                0x0000001d       0x2d c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
+                0x0000001d       0x2d c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtbegin.o
  .ARM.attributes
                 0x0000004a       0x21 .pio\build\bluepill_f103c8\FrameworkCMSIS\gcc\startup_stm32f103xb.o
  .ARM.attributes
                 0x0000006b       0x33 .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
  .ARM.attributes
-                0x0000009e       0x33 .pio\build\bluepill_f103c8\src\main.o
+                0x0000009e       0x33 .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
  .ARM.attributes
-                0x000000d1       0x33 .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
+                0x000000d1       0x33 .pio\build\bluepill_f103c8\src\controlador_luz.o
  .ARM.attributes
-                0x00000104       0x2d c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+                0x00000104       0x33 .pio\build\bluepill_f103c8\src\despacho_retardado.o
  .ARM.attributes
-                0x00000131       0x1d c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtn.o
+                0x00000137       0x33 .pio\build\bluepill_f103c8\src\main.o
+ .ARM.attributes
+                0x0000016a       0x33 .pio\build\bluepill_f103c8\src\pulsador.o
+ .ARM.attributes
+                0x0000019d       0x33 .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+ .ARM.attributes
+                0x000001d0       0x33 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(soporte_placa.o)
+ .ARM.attributes
+                0x00000203       0x33 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+ .ARM.attributes
+                0x00000236       0x33 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
+ .ARM.attributes
+                0x00000269       0x2d c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000296       0x2d c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000002c3       0x1d c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtn.o
 OUTPUT(.pio\build\bluepill_f103c8\firmware.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x1067
+.debug_info     0x00000000     0x3102
  .debug_info    0x00000000      0x3e4 .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
- .debug_info    0x000003e4      0x19f .pio\build\bluepill_f103c8\src\main.o
- .debug_info    0x00000583      0xae4 .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
+ .debug_info    0x000003e4      0x43c .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
+ .debug_info    0x00000820      0x5e1 .pio\build\bluepill_f103c8\src\controlador_luz.o
+ .debug_info    0x00000e01      0x36d .pio\build\bluepill_f103c8\src\despacho_retardado.o
+ .debug_info    0x0000116e      0x6e8 .pio\build\bluepill_f103c8\src\main.o
+ .debug_info    0x00001856      0x3b3 .pio\build\bluepill_f103c8\src\pulsador.o
+ .debug_info    0x00001c09      0x46a .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+ .debug_info    0x00002073      0x139 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(soporte_placa.o)
+ .debug_info    0x000021ac      0x69c .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+ .debug_info    0x00002848      0x8ba .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
 
-.debug_abbrev   0x00000000      0x500
+.debug_abbrev   0x00000000     0x10ff
  .debug_abbrev  0x00000000      0x131 .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
- .debug_abbrev  0x00000131       0xa2 .pio\build\bluepill_f103c8\src\main.o
- .debug_abbrev  0x000001d3      0x32d .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
+ .debug_abbrev  0x00000131      0x17b .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
+ .debug_abbrev  0x000002ac      0x1cd .pio\build\bluepill_f103c8\src\controlador_luz.o
+ .debug_abbrev  0x00000479      0x14a .pio\build\bluepill_f103c8\src\despacho_retardado.o
+ .debug_abbrev  0x000005c3      0x162 .pio\build\bluepill_f103c8\src\main.o
+ .debug_abbrev  0x00000725      0x177 .pio\build\bluepill_f103c8\src\pulsador.o
+ .debug_abbrev  0x0000089c      0x20f .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+ .debug_abbrev  0x00000aab       0xb2 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(soporte_placa.o)
+ .debug_abbrev  0x00000b5d      0x298 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+ .debug_abbrev  0x00000df5      0x30a .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
 
-.debug_loc      0x00000000      0x34a
+.debug_loc      0x00000000     0x11a4
  .debug_loc     0x00000000       0xcd .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
- .debug_loc     0x000000cd      0x27d .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
+ .debug_loc     0x000000cd      0x2c7 .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
+ .debug_loc     0x00000394      0x445 .pio\build\bluepill_f103c8\src\controlador_luz.o
+ .debug_loc     0x000007d9      0x1ef .pio\build\bluepill_f103c8\src\despacho_retardado.o
+ .debug_loc     0x000009c8      0x1da .pio\build\bluepill_f103c8\src\pulsador.o
+ .debug_loc     0x00000ba2      0x1ee .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+ .debug_loc     0x00000d90      0x181 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+ .debug_loc     0x00000f11      0x293 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
 
-.debug_aranges  0x00000000       0x98
+.debug_aranges  0x00000000      0x1e8
  .debug_aranges
                 0x00000000       0x28 .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
  .debug_aranges
-                0x00000028       0x20 .pio\build\bluepill_f103c8\src\main.o
+                0x00000028       0x38 .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
  .debug_aranges
-                0x00000048       0x50 .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
+                0x00000060       0x40 .pio\build\bluepill_f103c8\src\controlador_luz.o
+ .debug_aranges
+                0x000000a0       0x30 .pio\build\bluepill_f103c8\src\despacho_retardado.o
+ .debug_aranges
+                0x000000d0       0x20 .pio\build\bluepill_f103c8\src\main.o
+ .debug_aranges
+                0x000000f0       0x28 .pio\build\bluepill_f103c8\src\pulsador.o
+ .debug_aranges
+                0x00000118       0x30 .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+ .debug_aranges
+                0x00000148       0x20 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(soporte_placa.o)
+ .debug_aranges
+                0x00000168       0x40 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+ .debug_aranges
+                0x000001a8       0x40 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
 
-.debug_ranges   0x00000000       0x80
+.debug_ranges   0x00000000      0x218
  .debug_ranges  0x00000000       0x18 .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
- .debug_ranges  0x00000018       0x10 .pio\build\bluepill_f103c8\src\main.o
- .debug_ranges  0x00000028       0x58 .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
+ .debug_ranges  0x00000018       0x28 .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
+ .debug_ranges  0x00000040       0x30 .pio\build\bluepill_f103c8\src\controlador_luz.o
+ .debug_ranges  0x00000070       0x58 .pio\build\bluepill_f103c8\src\despacho_retardado.o
+ .debug_ranges  0x000000c8       0x10 .pio\build\bluepill_f103c8\src\main.o
+ .debug_ranges  0x000000d8       0x48 .pio\build\bluepill_f103c8\src\pulsador.o
+ .debug_ranges  0x00000120       0x40 .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+ .debug_ranges  0x00000160       0x10 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(soporte_placa.o)
+ .debug_ranges  0x00000170       0x30 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+ .debug_ranges  0x000001a0       0x78 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
 
-.debug_line     0x00000000      0x5b5
- .debug_line    0x00000000      0x271 .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
- .debug_line    0x00000271       0x68 .pio\build\bluepill_f103c8\src\main.o
- .debug_line    0x000002d9      0x2dc .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
+.debug_line     0x00000000     0x19aa
+ .debug_line    0x00000000      0x285 .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
+ .debug_line    0x00000285      0x28e .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
+ .debug_line    0x00000513      0x2d5 .pio\build\bluepill_f103c8\src\controlador_luz.o
+ .debug_line    0x000007e8      0x287 .pio\build\bluepill_f103c8\src\despacho_retardado.o
+ .debug_line    0x00000a6f      0x2a7 .pio\build\bluepill_f103c8\src\main.o
+ .debug_line    0x00000d16      0x1dd .pio\build\bluepill_f103c8\src\pulsador.o
+ .debug_line    0x00000ef3      0x292 .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+ .debug_line    0x00001185      0x214 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(soporte_placa.o)
+ .debug_line    0x00001399      0x2c4 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+ .debug_line    0x0000165d      0x34d .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
 
-.debug_str      0x00000000      0x8b7
- .debug_str     0x00000000      0x295 .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
-                                0x2e2 (size before relaxing)
- .debug_str     0x00000295       0xe5 .pio\build\bluepill_f103c8\src\main.o
-                                0x21e (size before relaxing)
- .debug_str     0x0000037a      0x53d .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
-                                0x883 (size before relaxing)
+.debug_str      0x00000000     0x1065
+ .debug_str     0x00000000      0x2a3 .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
+                                0x2f6 (size before relaxing)
+ .debug_str     0x000002a3      0x26c .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
+                                0x3f1 (size before relaxing)
+ .debug_str     0x0000050f      0x19e .pio\build\bluepill_f103c8\src\controlador_luz.o
+                                0x4b7 (size before relaxing)
+ .debug_str     0x000006ad       0x91 .pio\build\bluepill_f103c8\src\despacho_retardado.o
+                                0x2fe (size before relaxing)
+ .debug_str     0x0000073e      0x20e .pio\build\bluepill_f103c8\src\main.o
+                                0x5f2 (size before relaxing)
+ .debug_str     0x0000094c       0x40 .pio\build\bluepill_f103c8\src\pulsador.o
+                                0x33d (size before relaxing)
+ .debug_str     0x0000098c       0xb5 .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+                                0x38e (size before relaxing)
+ .debug_str     0x00000a41       0x31 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(soporte_placa.o)
+                                0x1f3 (size before relaxing)
+ .debug_str     0x00000a72      0x151 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+                                0x520 (size before relaxing)
+ .debug_str     0x00000bc3      0x4a2 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
+                                0x738 (size before relaxing)
 
 .comment        0x00000000       0x7e
  .comment       0x00000000       0x7e .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
                                  0x7f (size before relaxing)
+ .comment       0x0000007e       0x7f .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
+ .comment       0x0000007e       0x7f .pio\build\bluepill_f103c8\src\controlador_luz.o
+ .comment       0x0000007e       0x7f .pio\build\bluepill_f103c8\src\despacho_retardado.o
  .comment       0x0000007e       0x7f .pio\build\bluepill_f103c8\src\main.o
- .comment       0x0000007e       0x7f .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
+ .comment       0x0000007e       0x7f .pio\build\bluepill_f103c8\src\pulsador.o
+ .comment       0x0000007e       0x7f .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+ .comment       0x0000007e       0x7f .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(soporte_placa.o)
+ .comment       0x0000007e       0x7f .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+ .comment       0x0000007e       0x7f .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
 
-.debug_frame    0x00000000      0x124
+.debug_frame    0x00000000      0x3f4
  .debug_frame   0x00000000       0x30 .pio\build\bluepill_f103c8\FrameworkCMSIS\system_stm32f1xx.o
- .debug_frame   0x00000030       0x28 .pio\build\bluepill_f103c8\src\main.o
- .debug_frame   0x00000058       0xa0 .pio\build\bluepill_f103c8\lib906\libsoporte_placa.a(soporte_placa.o)
- .debug_frame   0x000000f8       0x2c c:/users/mariano/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x00000030       0x78 .pio\build\bluepill_f103c8\src\controlador_de_pulsaciones.o
+ .debug_frame   0x000000a8       0x8c .pio\build\bluepill_f103c8\src\controlador_luz.o
+ .debug_frame   0x00000134       0x7c .pio\build\bluepill_f103c8\src\despacho_retardado.o
+ .debug_frame   0x000001b0       0x28 .pio\build\bluepill_f103c8\src\main.o
+ .debug_frame   0x000001d8       0x4c .pio\build\bluepill_f103c8\src\pulsador.o
+ .debug_frame   0x00000224       0x58 .pio\build\bluepill_f103c8\libd29\libmaquina_estado.a(maquina_estado.o)
+ .debug_frame   0x0000027c       0x20 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(soporte_placa.o)
+ .debug_frame   0x0000029c       0x84 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_pin.o)
+ .debug_frame   0x00000320       0x88 .pio\build\bluepill_f103c8\lib4d8\libsoporte_placa.a(sp_tiempo.o)
+ .debug_frame   0x000003a8       0x2c c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x000003d4       0x20 c:/users/bruno ayala/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
